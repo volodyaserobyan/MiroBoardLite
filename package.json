@@ -2,10 +2,13 @@
   "private": true,
   "scripts": {
     "build": "tsc --noEmit && esbuild src/main.ts --bundle --outfile=dist/bundle.js --sourcemap --target=es2020",
-    "watch": "esbuild src/main.ts --bundle --outfile=dist/bundle.js --sourcemap --target=es2020 --watch"
+    "watch": "esbuild src/main.ts --bundle --outfile=dist/bundle.js --sourcemap --target=es2020 --watch",
+    "test": "vitest run",
+    "test:watch": "vitest"
   },
   "devDependencies": {
     "esbuild": "^0.28.0",
-    "typescript": "^6.0.2"
+    "typescript": "^6.0.2",
+    "vitest": "^4.1.4"
   }
 }
