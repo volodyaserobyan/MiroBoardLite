@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Miro-Lite — Infinite Canvas</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="hud">
+  Camera: <span id="hud-x">0</span>, <span id="hud-y">0</span><br>
+  Zoom: <span id="hud-zoom">100</span>%<br>
+  Objects: <span id="hud-count">0</span>
+</div>
+
+<div id="help">
+  <kbd>Space</kbd> + Drag &nbsp;or&nbsp; <kbd>Middle Mouse</kbd> — Pan<br>
+  <kbd>Scroll</kbd> — Zoom to cursor<br>
+  <kbd>Click</kbd> — Select &amp; drag notes<br>
+  <kbd>Double-click</kbd> — Edit note text<br>
+  <kbd>Delete</kbd> — Remove selected
+</div>
+
+<div id="toolbar">
+  <button id="btn-add">+ Add Note</button>
+  <button id="btn-reset">Reset View</button>
+</div>
+
+<textarea id="note-editor" spellcheck="false"></textarea>
+
+<script src="dist/bundle.js"></script>
+</body>
+</html>
